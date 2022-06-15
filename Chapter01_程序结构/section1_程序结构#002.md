@@ -4,7 +4,6 @@
 
 动手跑 Hello Golang 代码。
 
-----
     package main
 
     import "fmt"
@@ -35,10 +34,10 @@
 
 ### 1.2.3 变量的四种使用方式
 
-- 支持一次性声明多个变量
-- 局部变量与全局变量
+支持一次性声明多个变量。
 
-----
+局部变量与全局变量。
+
     package main
 
     import "fmt"
