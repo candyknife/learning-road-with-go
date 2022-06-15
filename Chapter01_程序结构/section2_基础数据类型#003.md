@@ -20,7 +20,6 @@
 
 > Golang 声明整数类型时默认为 int 型。
 
-----
     package main
 
     import (
@@ -54,7 +53,6 @@
 
 **符号位**+**指数位**+**尾数位**，所以尾数只存了个大概，可能出现精度损失。
 
-----
     package main
 
     import (
@@ -96,7 +94,6 @@ Golang 中没有专门的字符类型，要存储单个字符（字母），一�
 
 Golang 中字符使用 UTF-8 编码，参考 ASCII 码表。
 
-----
     package main
 
     import (
@@ -120,11 +117,13 @@ Golang 中字符使用 UTF-8 编码，参考 ASCII 码表。
 
 ## 3.4 布尔型
 
-- 布尔型也称 bool 型，只允许取值 true 和 false。
-- bool 型占 1 个字节。
-- bool 型适用于逻辑运算，一般用于程序流程控制。
+布尔型也称 bool 型，只允许取值 true 和 false。
 
-----
+bool 型占 1 个字节。
+
+bool 型适用于逻辑运算，一般用于程序流程控制。
+
+
     package main
 
     import (
@@ -146,7 +145,6 @@ Golang 中字符使用 UTF-8 编码，参考 ASCII 码表。
 
 字符串就是一串固定长度的字符连接起来的字符序列。
 
-----
     package main
 
     import (
@@ -213,7 +211,6 @@ Golang 在不同类型的变量赋值时需要**显式转换**，并且只有显
 
 表达式 T(v) 将值 v 转换为类型 T。
 
-----
     package main
     import (
         "fmt"
@@ -254,10 +251,10 @@ Golang 在不同类型的变量赋值时需要**显式转换**，并且只有显
 
 ## 3.8 基本数据类型转换为String
 
-- 方式 1：**fmt.Sprinf("%参数", 表达式)**。
-- 方式 2：使用 **strconv 包**的函数。
+方式 1：**fmt.Sprinf("%参数", 表达式)**。
 
-----
+方式 2：使用 **strconv 包**的函数。
+
     package main
     import (
         "fmt"
@@ -291,7 +288,6 @@ Golang 在不同类型的变量赋值时需要**显式转换**，并且只有显
 
 使用 **strconv 包**的函数。
 
-----
     package main
 
     import (
