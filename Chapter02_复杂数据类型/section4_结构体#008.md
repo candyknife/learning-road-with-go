@@ -77,3 +77,25 @@
 * Golang 没有类（class），但 Golang 中的结构体（struct）和其他编程语言的类有同等的地位，可以理解为 Golang 是基于 struct 来实现 OOP 特性的。
 * Golang 面向对象编程非常简洁，去掉了传统 OOP 语言的方法重载、构造函数与析构函数、隐藏的 this 指针等。
 * Golang 仍然有面向对象编程的继承、封装、多态的特性，只是实现方式和其他 OOP 语言不一样，比如继承：Golang 没有 extends 关键字，继承是通过匿名字段来实现的。
+
+## 2.4.5 为结构体挂载方法（前瞻）
+
+    package main
+    
+    import "fmt"
+    
+    type Dog struct{
+        Name string
+        Sex bool
+        Species string
+    }
+    
+    func (dog *Dog)Eat(Food string)(result bool){
+        fmt.Println("Dog %v have eaten %v!", dog.Name, Food)
+        return True
+    }
+    
+    func main(){
+        dog := Dog{"33", True, "中华田园犬"}
+        dog.Eat("meat")
+    }
